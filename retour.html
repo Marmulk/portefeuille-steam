@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Portefeuille · retour de Steam</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #eef4f1; color: #121614;
+         font: 16px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width: 32ch; padding: 24px; }
+  p { margin: 0; color: #45524c; }
+  @media (prefers-color-scheme: dark) { body { background: #0d1520; color: #eaf2f8; } p { color: #b4c3d1; } }
+</style>
+<main>
+  <h1 style="font-size:20px;margin:0 0 8px">Retour au Portefeuille…</h1>
+  <p>Steam a répondu ; l'app reprend la main et fait confirmer la connexion par Steam. Rien n'est gardé sur cette page.</p>
+</main>
+<script>
+  // Steam ne renvoie que vers une adresse web : cette page passe sa réponse à l'app, telle quelle.
+  location.replace('portefeuille://steam/retour' + location.search);
+</script>
+</html>
